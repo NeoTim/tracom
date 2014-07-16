@@ -4,9 +4,13 @@ var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
 var BatchSchema = new Schema({
-  name: String,
-  info: String,
-  active: Boolean
+  batch: String,
+  sku: String,
+  status:
+    num: Number,
+    color: String,
+    label: String,
+  complete: Boolean
 });
 
 module.exports = mongoose.model('Batch', BatchSchema);

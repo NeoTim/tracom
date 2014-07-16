@@ -2,3 +2,18 @@ div(ng-include='"components/navbar/navbar.html"')
 
 //- .col-md-12
 //-   | This is the service view.
+//- div(ui-layout='ui-layout')
+//-     .html-back
+//-       div(ui-layout='{flow : \'column\'}')
+//-         .html-back
+//-         .js-back
+//-         .css-back
+//-       .css-back
+
+div(ui-layout class="layout-mock")
+  header(class="north-back")
+  ui-layout(options="{ flow : 'column' }")
+    sidebar(class="east-back")
+    div(class="center-back")
+    sidebar(class="west-back")
+  footer(class="south-back")

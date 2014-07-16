@@ -1,13 +1,11 @@
 'use strict';
 
 var express = require('express');
-var controller = require('./entry.controller');
+var controller = require('./contact.controller');
 
 var router = express.Router();
 
 router.get('/', controller.index);
-router.get('/batch/:batch_id', controller.getByBatch);
-router.get('/order/:order_id', controller.getByOrder);
 router.get('/:id', controller.show);
 router.post('/', controller.create);
 router.put('/:id', controller.update);

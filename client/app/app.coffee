@@ -8,6 +8,7 @@ angular.module('tracomApp', [
   'btford.socket-io',
   'ui.calendar'
   'n3-line-chart'
+  'ui.layout'
   'ui.router'
 ])
   .config (($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) ->

@@ -1,4 +1,10 @@
 div(ng-include='"components/navbar/navbar.html"')
 
-.col-md-12
-    | This is the dashboard view.
+div(ng-repeat="p in panels" class="col-md-{{p.size}}")
+  div.panel
+    div.panel-header
+      h4.panel-heading
+        div.btn-group.pull-right
+          button.btn.btn-info.btn-sm
+            i.fa.fa-wrench
+        {{p.title}}

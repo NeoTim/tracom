@@ -19,6 +19,22 @@ exports.show = function(req, res) {
     return res.json(entry);
   });
 };
+exports.getByBatch = function(req, res) {
+  var customer_id = req.params.customer_id;
+  Entry.find({batch_id: bacth_id}, function (err, entry) {
+    if(err) { return handleError(res, err); }
+    if(!entry) { return res.send(404); }
+    return res.json(entry);
+  });
+};
+exports.getByOrder = function(req, res) {
+  var order_id = req.params.order_id;
+  Entry.find({order_id: order_id}, function (err, entry) {
+    if(err) { return handleError(res, err); }
+    if(!entry) { return res.send(404); }
+    return res.json(entry);
+  });
+};
 
 // Creates a new entry in the DB.
 exports.create = function(req, res) {
