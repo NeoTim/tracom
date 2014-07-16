@@ -1,0 +1,18 @@
+div.panel
+  div.panel-body
+    //- form(ng-submit="createCustomer(newCust)")
+    div.form-group
+      label Company Name
+      input.form-control(ng-model="newCust.name")
+    div.form-group
+      label Company Phone
+      input.form-control(ng-model="newCust.phone")
+    div.form-group
+      label Company Email
+      input.form-control(ng-model="newCust.email")
+
+
+
+  div.panel-footer
+    button.btn.btn-success(ng-click="createCusomter(newCust)") Done
+    a.btn.btn-danger.pull-right(href="#/customers") Cancel

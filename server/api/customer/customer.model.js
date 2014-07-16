@@ -5,8 +5,8 @@ var mongoose = require('mongoose'),
 
 var CustomerSchema = new Schema({
   name: String,
-  info: String,
-  active: Boolean
+  email: String,
+  phone: String
 });
 
 module.exports = mongoose.model('Customer', CustomerSchema);

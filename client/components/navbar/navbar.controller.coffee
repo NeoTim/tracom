@@ -21,6 +21,10 @@ angular.module('tracomApp').controller 'NavbarCtrl', ($scope, $location, Auth) -
     title: 'Calendar'
     link: '/calendar'
     icon: 'fa-calendar-o'
+  ,
+    title: 'Customer'
+    link: '/customers'
+    icon: 'fa-group'
   ]
   $scope.isCollapsed = true
   $scope.isLoggedIn = Auth.isLoggedIn

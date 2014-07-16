@@ -1,2 +1,21 @@
+div(ng-include='"components/navbar/navbar.html"')
 .col-md-12
-    | This is the customer view.
+    //- | This is the customer view.
+div.col-md-4
+  div.panel
+    div.panel-body
+      ul.list-group
+        a.list-group-tiem(ng-repeat="cust in customers", href="#/customers/{{cust._id}}")
+          h4.list-group-item-heading {{cust.name}}
+            button.btn.btn-xs.btn-danger.pull-right
+              i.fa.fa-times
+
+div.col-md-8
+  div.panel
+    div.panel-header
+      h4.panel-heading
+        a(ui-sref="customer") Customers
+        a.btn.btn-primary.btn-sm.pull-right(href="#/customers/create")
+          i.fa.fa-plus
+    //- div.panel-body
+  ui-view
