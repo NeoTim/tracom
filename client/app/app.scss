@@ -21,10 +21,27 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
         max-width: 730px;
     }
 }
+.bg-white {
+  background-color: #ffffff;
+  background: #ffffff;
+}
+
 
 // Component styles are injected through grunt
 // injector
 @import 'account/login/login.scss';
 @import 'admin/admin.scss';
 @import 'main/main.scss';
+@import 'models/batch/batch.scss';
+@import 'models/customer/customer.scss';
+@import 'models/delivery/delivery.scss';
+@import 'models/entry/entry.scss';
+@import 'models/order/order.scss';
+@import 'models/product/product.scss';
+@import 'models/shipment/shipment.scss';
+@import 'ui/calendar/calendar.scss';
+@import 'ui/dashboard/dashboard.scss';
+@import 'ui/map/map.scss';
+@import 'ui/production/production.scss';
+@import 'ui/service/service.scss';
 // endinjector

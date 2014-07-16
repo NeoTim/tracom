@@ -6,6 +6,8 @@ angular.module('tracomApp', [
   'ngSanitize',
   'ui.bootstrap',
   'btford.socket-io',
+  'ui.calendar'
+  'n3-line-chart'
   'ui.router'
 ])
   .config (($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) ->
